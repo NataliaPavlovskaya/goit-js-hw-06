@@ -9,6 +9,8 @@
 // 3.Все элементы галереи должны добавляться в DOM за одну операцию вставки.
 
 // 4.Добавь минимальное оформление галереи флексбоксами или гридами через CSS классы.
+const galleryList = document.querySelector('ul');
+galleryList.classList.add('active');
 
 
 const images = [
@@ -28,7 +30,6 @@ const images = [
 console.log(images);
 
 const makeImagesMarkup = ({url, alt}) => {
-  
   return `<li>
       <img src = "${url}" alt = "${alt}">
      </li>`

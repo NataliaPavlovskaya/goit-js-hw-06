@@ -34,8 +34,10 @@ if(mail === '' || password === ''){
 
 const formData = new FormData(event.currentTarget);
 
-console.log(`Login: ${mail}, Password: ${password}`);
+// console.log(`Login: ${mail}, Password: ${password}`);
 event.currentTarget.reset();
+const object = {mail, password};
+console.log (object);
 
 };
 

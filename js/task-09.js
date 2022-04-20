@@ -8,8 +8,10 @@ const refs = {
 console.log(refs.buttonEl);
 
 refs.buttonEl.addEventListener('click', onChangeColor);
-function onChangeColor(event){
-  document.body.style.backgroundColor = getRandomHexColor();
+function onChangeColor(){
+  const newColor = getRandomHexColor();
+  document.body.style.backgroundColor = newColor;
+  textColor.textContent = newColor;
 };
 
 function getRandomHexColor() {
